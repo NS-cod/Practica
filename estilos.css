@@ -1,0 +1,10 @@
+/* selector{ ---> selecciona elemento o elementos, o conjunto de elementos
+    propiedad: valor; ----> la propiedad que se cambia, color ancho, etc.
+                            en html todo es cajas, las que completan la linea display block
+                            si es display in line no completa la linea(estos ultimos se ajustan al contenido)
+                            elemento en bloque= ocupa todo hasta el final, por mas que el contenido sea mas chico
+                            en linea= la caja se adapta al contenido
+} */
+*{
+    color:red; /* el asterisco es el selector universal, es decir agarra todas las clases */
+}
