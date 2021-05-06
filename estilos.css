@@ -4,7 +4,41 @@
                             si es display in line no completa la linea(estos ultimos se ajustan al contenido)
                             elemento en bloque= ocupa todo hasta el final, por mas que el contenido sea mas chico
                             en linea= la caja se adapta al contenido
+
+selectores de tipo, son los que elegimospor elemento por ejemplo h1 button etc
+elementos por clase: se le agrega la clase al elemento en html, se escribe con .seguido del nombre de la clase
+elementos por id: es especifico de cada uno la idea es que sea unico, si se lo pongo a varios va a funcionar.
+seleccion por atributo: se le coloca un atributo cualquiera y luego se modifica
+por descendientes se escribe la etiqueta y luego la que contiene
+pseudoclases; hay varias pero por ejemplo hover hace que se ponga de un color al pasar el mouse 
 } */
-*{
+h1{ /* etiqueta*/
     color:red; /* el asterisco es el selector universal, es decir agarra todas las clases */
+}
+h2 p{/* por descendiente*/
+    color: brown;
+}
+h2 b{ /* por descendiente */
+    color: cornflowerblue;
+}
+.h2-class p{ /* por descendiente*/
+    color:goldenrod ;
+}
+.h2-class p span{ /* por descendiente*/
+    color: indigo;
+}
+b:hover{ /* pseudoclase*/
+    color: aquamarine;
+}
+.class2 b:hover{ /* pseudoclase descendiente*/
+    color: red;
+}
+.titulo-h2{ /* clase */
+    color:violet;
+}
+#element-for-modify{ /* id*/
+    color:purple;
+}
+[rancio="si"]{ /* atributo*/
+    color: green;
 }
