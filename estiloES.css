@@ -1,0 +1,56 @@
+*{
+    font-family: 'Lobster', cursive;;
+    color: red;
+    font-weight: 100;
+}
+.color-red{
+    color: red;
+}
+h1{
+    color: blue !important /* nivel mas importante, gerarquia mas alta
+    no se recomienda salvo que sea extremo*/
+}
+.color-red{
+    color: green;
+}
+/* METODOLOGIA BEM
+conssite en evitar conflictos de clases basandonos en el nombre de las clases:
+primero se pone el nombre del contenedor seguido de __ dos guiones bajos y el nombre del elemento
+tambien se puede usar --child para decir ue es el primero, pero mejor usar el active u otro nombre
+porq despues funciona mejor para js
+*/
+.contact-form__input--active{
+    color: red;
+}
+/* teoria de las medidas: relativas y fijas. relativas son variables, sirve para verse en distintos
+tamaños de pantallas. responsive. son rem y em
+1em =16 px depende del navegador SINO, si le damos un valor en px a el contenedor por ejemplo 20px
+1 em va a ser igual a 20px asi funciona la herencia, esta herencia funciona de la misma forma para cualquier
+propiedad que trabbaje con unidades de medidas.
+vw y vh= viewport widht y height, ocupan el porcentaje que le digamos de la pantall ej 50vw es el 50% .
+ fijas son uniddes de medida, px, cm mm etc.
+
+*/
+.contact-form{
+  font-size: 20px; /* valor de 20 px*/
+}
+.contact-form__h2{
+    font-size: 1em; /* 1 em va a ser 20 px*/
+}
+/*.contact-form{ ejemplo de viewport
+    font-size: 25px;
+    background-color: #000;
+    width: 50vw;
+    height: 50vh;
+}*/
+/* propiedades de texto 
+font size= tamaño de letra
+font family= tipografia
+line height= una letra ocuypa 1 line hight, es el alto de la letra desde el centro, 
+pero no crece la letra sino que es como un espacio en blanco
+font weight= es el grosor de la letra mas cantidad de num mas gruesa, se vea o no depende de la tipografia
+font stretch= no explicadas por no "servir" 
+cont variant= no explicadas por no "servir"
+se puede exportar tipografia, podemos ir a google font, le damos al boton de mas y copiar el link en el head
+luego se llama a  la fuente en el archivo css
+*/
