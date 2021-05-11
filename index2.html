@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estiloES.css">
+    <link rel="stylesheet" type="text/css" href="estiloES.css">
+    <!--<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> normalize, reinicia los estilos-->
+    <link rel="stylesheet" href="normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Itim&family=Lobster&display=swap" rel="stylesheet">
     <title>Especificidad</title>
 </head>
 <body>
-    <h1 class="color-red" style="color: aqua;">Especificidad</h1><!--el style es un estilo en linea, no se recomienda usar-->
+    <!--<h1 class="color-red">Especificidad</h1>el style es un estilo en linea, no se recomienda usar-->
     <h2><b>Hola</b></h2>
     <div class="contac-form">
+        <h3 class="contact-form__h3">Titulo</h3>
         <h2 class="contact-form__h2">Hello</h2>
         <p class="contact-form__p">
             <h2 class="contact-form__p-h2"></h2> <!--ejemplo de bem, en caso de cambiar de block se cambia todo el ombre de la misma forma-->

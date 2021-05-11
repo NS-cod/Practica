@@ -1,3 +1,4 @@
+
 *{
     font-family: 'Lobster', cursive;;
     color: red;
@@ -6,10 +7,10 @@
 .color-red{
     color: red;
 }
-h1{
+/*h1{
     color: blue !important /* nivel mas importante, gerarquia mas alta
-    no se recomienda salvo que sea extremo*/
-}
+    no se recomienda salvo que sea extremo
+}*/
 .color-red{
     color: green;
 }
@@ -31,9 +32,9 @@ vw y vh= viewport widht y height, ocupan el porcentaje que le digamos de la pant
  fijas son uniddes de medida, px, cm mm etc.
 
 */
-.contact-form{
-  font-size: 20px; /* valor de 20 px*/
-}
+/*.contact-form{
+  font-size: 20px; /* valor de 20 px
+}*/
 .contact-form__h2{
     font-size: 1em; /* 1 em va a ser 20 px*/
 }
@@ -53,4 +54,14 @@ font stretch= no explicadas por no "servir"
 cont variant= no explicadas por no "servir"
 se puede exportar tipografia, podemos ir a google font, le damos al boton de mas y copiar el link en el head
 luego se llama a  la fuente en el archivo css
+NORMALIZE
+el navegador pone todo por defecto, entonces usamos el normalize para reiniciar los estilos. para incluirlo facil
+ponemos el google normalize css abrimos el primer archivo, ponemos descargar, copiamos la barra de direccion
+y la pegamos en el head como se ve en el ejemplo, pero si lo descargamos y lo ponemos en la carpeta
+donde esta la pagina que creamos podemos abrirlo y editarlo.
+IMPORTANTE EL NORMALIZE para poder luego trabajar con css 100%
+TEORIA DE CAJAS= 2 tipos de cajas
+en linea= la medida es en base al contenido
+en bloque= forman bloques son las mas grandes, siempre se ajustan al ancho de su contenedor
+adentro del contenedor en bloque todo se va a ajustar a su mediada en lo ancho
 */

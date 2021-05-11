@@ -1,0 +1,50 @@
+*{
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+h2{
+    display: inline; /* display sirve para cambiar los elementos de block a 
+    linea, los elementos en linea no se les peude dar height ni width por ejem*/
+}
+/*
+PROPIEDADES DE CAJA= 
+*/
+h3{
+    background-color: #a22;
+    display: inline-block; /* con esto tiene la sprop de un elemento en block pero se comporta como en linea*/
+    padding: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 2em;
+    border: 10px solid blue;
+    box-shadow: 30px 20px 10px 10px #000;
+    text-shadow: 2px 2px 7px #fff , 2px 2px 7px #fff;
+    transform: rotate(45deg);
+
+}
+/*padding-bottom: 20px; padding es la distancia entre un elemento y la caja.
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding: 20px; de esta forma se le pone 20px a todo
+    padding: 20px 30px; primero eje y(top y bot) y despues eje x(left right)
+    padding: 10px 20px 30px; top, right/left(eje x), bottom
+    padding: 10px 20px 30px 40px; primero top, right, bottom, left
+    height: 100px; alto 
+    width: 100px; ancho.al ponerle estas 2 WIDHT Y HEIGHT propiedas junto con el padding
+     hay que tener en cuenta que se suman, es decir tendria con un  widht de 100 y padding en 10 50
+     100 +10+10 en el eje Y y 100+50+50 en el eje X
+    ahora si le ponemos la propiedad
+    box-sizing: border-box; no se suman aunque queda la caja por un lado y el texto por otro
+    text-align: center; alinea el texto en el centro de la caja.
+    margin: es la distancia entre cajas y funciona como el padding tener en cuenta
+    que los px son de una caja y otra si estan allado se van a sumar
+    borden-radius: es para redondear los bordes
+    border: 4px solid blue (pixeles, tipo de borde y color)
+    box-shadow: ejex, ejey, desenfoque, borde, color;
+    text-shadow: ejex, ejey, desenfoqye, color;
+    PARA INTENSIFICAR EL EFECTO DE LOS SHADOW TEXT Y BOX se puede copiar y pegar allado las mismas propiedades
+    EN EL BOX MODEL: hay jerarquias, explicado en imagen
+    */
