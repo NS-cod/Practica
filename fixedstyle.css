@@ -1,0 +1,27 @@
+*{
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 40px;
+}
+body{
+    padding-top: 100px;
+}
+.caja-fixed{
+    background: red;
+    position: fixed;
+    opacity: .3;
+    margin: -100px;
+}
+.sticky{
+    background: blue;
+    position: sticky;
+    opacity: 0.3;
+    top: 50px;
+}
+/*
+con fixed lo que hacemos es que quede fijo en un lugar por mas que hagamos scrollcon la rueda del mouse
+se suele usar para menues pero mas que nada para publicidad, deja de estar reservado el espacio
+STICKY es una combinacion de abasoul y fixed, el fixed va a estar siempre fijo pero el stiky puedo decidir
+a partir de que parte de la pagina va a quedar fijo, por ejemplo lo puedo poner en lamitad entonces scroleo y a partir de ahi
+se va a quedar fijo hasta abajo.
+*/

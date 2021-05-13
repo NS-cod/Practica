@@ -1,0 +1,19 @@
+*{
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 40px;
+}
+div{
+    margin: auto;
+    margin-top: 50px;
+    width: 320px;
+    height: 250px;
+    border: 4px solid red;
+    background: grey;
+    overflow-x: scroll;
+    overflow-y: hidden; 
+    /* el overflow es una propiedad qe sirve parahacer 
+    aglo con lo que sobra o sobrsale de las cajas es decir se puede poner el scroll o ocultarlo
+    ponerlo automatico si necesita en eje x o y
+    */
+}

@@ -1,0 +1,21 @@
+*{
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 40px;
+}
+/*div{ por defecto es block queda una abajo de la otra, inline quedan allado e inline block quedan en bloque allado
+    width: 150px;
+    height: 150px;
+    background: yellow;
+    border: 10px solid red;
+    margin: 20px;
+    display: inline;
+}*/
+div{
+    width: 150px;
+    height: 150px;
+    background: yellow;
+    border: 10px solid red;
+    margin: 20px;
+    display: inline-block;
+}
