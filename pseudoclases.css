@@ -3,6 +3,36 @@
     font-weight: 100;
     font-size: 20px;
 }
+.caja3{
+    margin: 25px;
+}
+.caja3 b:lang(en){ /* detecta el idioma y lo modifica con las propiedades deberia hacerlo solo con el que tiene en en la etquieta pero no lo hce*/
+    background:red;
+    padding: 20px;
+}
+/*:lang(en){ de esta forma lo hce con cualquioer elemento que este en el idioma especificado
+    background:red;
+    padding: 20px;
+}*/
+input{
+    transition: 1s;
+    margin: 25px;
+}
+
+.caja0:focus{
+    background:lightseagreen;
+}
+.caja{
+    width: 300px;
+    background: red;
+    height: 300px;
+    margin: 25px;
+    transition: 1s;
+}
+.caja:active{
+    background: blue;
+    width: 400px;
+}
 .caja1{
     padding: 20px;
     background-color: darkslateblue;
@@ -31,4 +61,9 @@ las pseudoclases escuchan eventos=
 hover= escucha el evento del mouse encima, es decir cuando el mouse esta encima los efectos que ocurren son
 nota no se recomienda poner all
 link es para visitar la pagina al visitarlo ya cambia el color.
+visited es para que cuando usas el link quede de otro color.
+visited y linbk, son en linea y se le puede cambiar el background.
+active= para el momento que se mantiene presionado elboton se va a ejecutar lo que scribamos en active
+focus= es una propiedad qu se usa para los input, hace qye cuando seleccinoas para escribir suceda lo que pones en focus
+lang= detectar el idioma y cambiar las propiedades
 */
