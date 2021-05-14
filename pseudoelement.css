@@ -1,0 +1,58 @@
+*{
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 20px;
+}
+form{
+    margin: 100px auto;
+    background-color:#555;
+    display: block;
+    padding: 100px;
+    width: 50%;
+    
+}
+input{
+    padding: 6px;
+    width: 100%;
+}
+input::placeholder{
+    color:red;
+    font-size: 1.1em;
+}
+.texto{
+    padding: 20px;
+}
+.texto::first-line{
+    color: blue;
+    font-size: 1em;
+}
+.texto::first-letter{
+    color: red;
+    font-size: 3em;
+}
+.texto::selection{
+    color: aqua;
+    background: olive;
+}
+b{
+    padding: 6px;
+    width: 100%;
+}
+b::before{
+    content: "me suscribi ";
+    color: red;
+}
+b::after{
+    content: " todo tendencia";
+    color: red;
+}
+/*
+los pseudoelementos que requieren la etiqueta de content no forman parte del dom pero si afectan cambios ivisuales
+first line= es para elementos de block, asi se escriben los pseudo elementos, lo bueno de esto es que son responsive
+es decir va a ser de ese color siempre laprimera linea por mas que  cambie de tamaño la pagina
+first leeter solo funciona para bloques
+placeholder: son las letras que aparecen en el input
+selection: es cuando seleccionas texto que aparece las letras subrayadas y cambia de color
+After y before: soon hijos del elemento que se aplica. si o si necesitan la etiqueta content y sirven para agregar texto antes y despues
+de otra cosa, 
+*/

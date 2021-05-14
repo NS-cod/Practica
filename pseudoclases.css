@@ -1,0 +1,34 @@
+*{
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 20px;
+}
+.caja1{
+    padding: 20px;
+    background-color: darkslateblue;
+    transition: background .12s; /* deberia tomar el backgroudn pero nose porq no lo hace*/
+    color: white;
+
+}
+.caja1:hover{
+    padding: 20px;
+    background: slateblue;
+    color: black;
+}
+.caja2{
+    margin: 30px;
+    display: block;
+
+}
+a:link{
+    color: red;
+}
+a:visited{
+    color: violet;
+}
+/*
+las pseudoclases escuchan eventos=
+hover= escucha el evento del mouse encima, es decir cuando el mouse esta encima los efectos que ocurren son
+nota no se recomienda poner all
+link es para visitar la pagina al visitarlo ya cambia el color.
+*/
