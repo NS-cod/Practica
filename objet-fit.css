@@ -1,0 +1,58 @@
+*{
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 20px;
+}
+.caja1{
+    margin: 40px;
+    width: 200px;
+    height: 300px;
+    border: 5px solid red;
+    background-color: pink;
+    cursor: pointer;
+}
+.caja:active{
+    cursor: row-resize;
+}
+.caja{
+    margin: 25px;
+    width: 300px;
+    height: 400px;
+}
+/*.caja img{
+    width: 100%;
+    height: 100%;/* la imagen queda estirada de esta forma y se evita con objet fit
+    border: 2px solid red;
+    object-fit: contain;
+}*/
+.caja img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    object-fit: cover;
+    object-position: left;
+}
+/*.caja img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    object-fit: scale-down;
+}*/
+/*
+OBJET FIT
+fil=
+contain= viene por defecto, hace que las imagnes se ajusten al contenido, si esta en un contenedor mas grande se ajusta en el centro
+cover= la imagen s eajusta al contenedor y recorta los bordes, sirve para que se ajuste a las resoluciones tambien, es decir a la caja que lo contiene
+none=actua como si fuese la imagen original, usa las propiedades por defecto no se recomienda con imagenes muy grandes
+scale down= se queda con la mejor propiedad, se fija cual es mas chico entre none y contain y lo deja
+OBJET POSITION=
+left right, top bottom, se muesttran mas de ese lad. a la vez se le pueden agregar medidas para correrlo mas o menos.
+
+CURSOR
+Pdoemos hacer que el cursor cambie mientras esta sobre un objeto o incluso mientars se mantiene apretado
+
+COLOR
+rgb = red green blue
+rgba = red green blue opacity
+hexagesimal= 3 6 u 8 unidades de color
+*/
