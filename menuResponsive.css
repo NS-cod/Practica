@@ -14,10 +14,10 @@ nav{
     padding: 12px;
     color: #fff;
 }
-.nav__li:hover > a{ /* es decir cuando se le pase el mouse a nav se entra al A*/
+.nav__li:hover > a{ 
     color: #bbb;
 }
-.nav__li:hover{ /* es decir cuando se le pase el mouse a nav se entra al A*/
+.nav__li:hover{ 
     color: #bbb;
 }
 .nav__li a{
@@ -30,7 +30,7 @@ nav{
     box-sizing: border-box;
     margin-right: 5px;
 }
-.nav__responsive-button-container{ /* se puede poner aca porque solo va a aparecer cuando llegue a esos px*/
+.nav__responsive-button-container{ 
    position: absolute;
    width: 100%;
    font-size: 25px;
