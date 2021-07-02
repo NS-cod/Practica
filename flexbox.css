@@ -2,22 +2,32 @@
     font-family: 'Lobster', cursive;
     font-weight: 100;
 }
-.flex-container{
+/*.flex-container{
     display: flex;
-    flex-wrap: wrap-reverse;
-}
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: space-evenly   ;
+    align-content: baseline;
+    
+}*/
 /*.flex-item{
     background-color: #248;
     color: #fff;
     padding: 10px;
     margin: 5px;
 }*/
+.flex-container{
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+}
 .flex-item-2{
     background-color: #248;
     color: #fff;
     height: 120px;
     width: 120px;
     margin: 10px;
+    flex-grow: 1;
     text-align: center;
 }
 .orange{
@@ -42,4 +52,22 @@ FLEX FLOW
 es la abreviacion de flex direction y wrap juntos, se pone asi
 flex flow: flex direction, flex wrap
 JUSTIFY CONTENT
+center= centrar contenido
+space around= es similar al margin auto es mejor suar esta prop porq  se la damos al contenedor
+space between= deja la mayor cantidad de espacio entre cajas hasta que se pegan a los bordes de la pantalla
+space evently= todas las cajas con el mismo margin
+ALING content
+center= centra el item en el contenedor forma vertical
+flex end = al final
+baseline = se alinea con respecto a las lineas de base respectivas, si se combinac on wrap reverse se puede lograr 
+el efecto de que las cajas o contenidos se acomoden de abajo para arriba en el footer.
+strech = valor por defecto que ocupa todo el cross axis
+flex start = se ajusta al contenido , este y el anterior se aplican al no especificar un alto al item
+FLEX ITEMS = propiedas reservadas para los item dentro d contenedores flex
+son las mismas propiedas anteriores, aplicadas al cross axis pero se pueden aplicar individualmente a los item 
+los margin se comportan inversamente a lo que dicen , es decir left es right, top es bottoem etc.
+Flex grow = se reparte el espacio sobrante entre los item a lo largo del main axis
+flex basis=define el tamaño de un elemento antes de que reparta el espacio sobrante tiene prioridad frente al width porque se aplica primero, y va an
+flex shrink = es el epacio que va a ceder la caja en el momento de que no alcance el espacio. esto sucede una vez que llegan al tamaño asignado
+ORDER= posicionamiento en el main axis
 */

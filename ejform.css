@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #1637CB;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.flex-container{
+    background-color: #ffff;
+    display: flex;
+}
+.flex-item{
+    height: 400px;
+    width: 450px;
+}
+#secondid input, textarea, button{
+    display: block;
+}
+#firstid{
+    background-image: url(https://www.nationalgeographic.com.es/medio/2020/04/15/monte-everest-8848-metros_5ff32b28_1262x831.jpg);
+}

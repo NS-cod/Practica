@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: radial-gradient(circle,#fff,#bbb);
+    padding: 15px;
+}
+.grid-container{
+    display: grid;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 150px 150px 150px 1fr;
+    /*grid-template-columns: repeat(3,150px) 1fr;*/
+    border: 3px solid #000;
+    grid-gap: 10px;
+}
+.grid-item{
+    border: 2px solid #000;
+    background-color: #999;
+}
+.grid-item:first-child{
+    background: #900;
+    grid-column: 1/3;
+    grid-row: 1/ span 2; /* es lo mismo que 1/3*/
+}
+.grid-item:nth-child(2){
+    background-color: #090;
+    grid-column: 3/5;
+}
+
+/*
+grid es un estilo de layout, esun valor de la propiedad display, se trabaja a travez de grillas
+grid container: el contenedor completo, contiene toda la grilla
+grid item: cada elemento que forme parte del contenedor por fuera o dentro d celdas ejempl los div, el div es el container
+y los hijos directos son items (si loshijos tienen otras cosas adentro no)
+grid cell: son las divisiones de las grillas, tienen formas cuadrialeteros
+grid tracks = colum y row filas+columas = grid track
+row: fila
+colum: columnas
+grid area: areas seleccionadas y consecutivas, ejemplo seleccionar un track entero o varias celdas
+las areas no estan definidas por defecto, si o si tienen que ser consecutivas.
+PROPIEDADES container
+unidades auto y fr = fr es flex grow es parecido para que se reparta el espacio
+grid line = son las lineas divisiorias por filas y columnas, arranca a contar de los bordes.
+grid templates row = aca se dice la cantidad de filas y sus medidas
+grid column gap
+abreviado es grid gap = row column es una epecie de margin entre celdas, la distancia entre una celda y otra respectiva a todos los bordes
+PROPIEDADES DE ITEM
+grid colum o row = desde / hasta  esto se usa para hacer que cierto item ocupe mas de una columna o fila
+si yo uso span, es como una ayuda a decir que arranca de 1 y span 3 que ocupe 3 columanas o filas
+con span te evitas de contar las lineas y directamente decis donde arranca y cuanto ocupa
+REPEAT(cant, tamaño) ejemplo,repeti 3 columnas de 150 px y si le paso otro paramentro me lo repite tambin es decir hacer 6 columnas.
+
+
+*/
